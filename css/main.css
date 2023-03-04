@@ -39,6 +39,12 @@ a {
     text-transform: uppercase;
 }
 
+.button,
+.social a {
+    transform-origin: center;
+    transition-duration: 100ms;
+}
+
 
 /*3.Specific*/
 
@@ -86,6 +92,23 @@ a {
 .job {
     color: #ffe479;
     font-size: 0.75rem;
+}
+
+.button {
+    background-color: #fff;
+    border-radius: 290486px;
+    box-shadow: 0 1rem 2 rem rgba(0, 0, 0, 2);
+    color: #9013fe;
+    display: inline-block;
+    font-size: 0.875rem;
+    line-height: 1;
+    padding: 1.25em 2em;
+    text-shadow: none;
+    transition-property: box-shadow, transform;
+    user-select: none;
+    vertical-align: top;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
 }
 
 
@@ -149,4 +172,14 @@ a {
 .contact {
     display: inline-block;
     margin-top: 1.5rem;
+}
+
+.button:hover {
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0.2);
+    transform: scale(1.02) translateY(-4px);
+}
+
+.button:active {
+    box-shadow: 0 0.5rem 1rem rgba (0, 0, 0, 0.3);
+    transform: scale(0.98) translate(-2px);
 }
